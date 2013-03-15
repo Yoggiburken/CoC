@@ -19,7 +19,6 @@ void Person::setPhobia(sor choice)
     } else() {
         srand(time(NULL));
         int random;
-        string mentalill;
         random =1;// rand()%;
         if(random == 1){ 
             mentalill += "PHOBIA:";
@@ -45,6 +44,6 @@ void Person::setPhobia(sor choice)
 
             }   
         }   
-    }   
+    }
 }
 
