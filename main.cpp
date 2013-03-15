@@ -10,9 +10,9 @@ int main()
     {
         char cmd;
         cout<<"Personality Generator"<<endl;
-        cout<<"1"<<setw(6)<<"Add Person"<<endl;
-        cout<<"2"<<setw(6)<<"Remove Person"<<endl;
-        cout<<"3"<<setw(6)<<"Edit Person"<<endl;
+        cout<<setw(6)<<setfill('-')<<left<<"1"<<"Add Person"<<endl;
+        cout<<setw(6)<<"2"<<"Remove Person"<<endl;
+        cout<<setw(6)<<"3"<<"Edit Person"<<endl;
         cin>>cmd;
         if(cmd==1) {
             //Person temp;
