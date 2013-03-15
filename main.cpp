@@ -18,6 +18,5 @@ int main()
             //Person temp;
             //persons.push_back(temp);
         }
-    }
-    
+    }    
 }
