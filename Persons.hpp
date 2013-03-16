@@ -1,6 +1,6 @@
-#include<vector.hpp>
-#include"Item.hpp"
-#include"Location.hpp"
+#include<vector>
+//#include"Item.hpp"
+//#include"Location.hpp"
 
 using namespace std;
 
@@ -19,19 +19,19 @@ class Person {
 
     bool                isDead;
 
-    Location            currentLocation;
+    //Location            currentLocation;
 
-    Vector<Item>        items;
+    //vector<Item>        items;
 
 public:
     void setPersonality();
     void setPhobias(sor);
     void moveToLocation();
-    void addItem(Item);
-    void removeItem(Item);
+    //void addItem(Item);
+    //void removeItem(Item);
 
     bool stillAlive();
-    bool hasItem(Item);
+    //bool hasItem(Item);
 };
 
 
