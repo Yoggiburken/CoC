@@ -24,8 +24,9 @@ class Person {
     //vector<Item>        items;
 
 public:
+    void setName(string);
     void setPersonality();
-    void setPhobias(sor);
+    void setPhobia(sor);
     void moveToLocation();
     //void addItem(Item);
     //void removeItem(Item);

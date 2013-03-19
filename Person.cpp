@@ -4,19 +4,24 @@
 
 using namespace std;
 
+void Person::setName(string temp)
+{
+    name=temp;
+}
+
 void Person::setPersonality()
 {
-    sor choice
+    sor choice;
     cout<<"SET or RANDOM phobia?"<<endl;
-    cin>>choice;
+    //cin>>choice;
     setPhobia(choice);
 }
 
 void Person::setPhobia(sor choice)
 {
-    if(choice == set) {
-
-    } else() {
+    if(true) {
+        cout<<"LOL"<<endl;
+    } else(true) {
         srand(time(NULL));
         int random;
         random =1;// rand()%;
