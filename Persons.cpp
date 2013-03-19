@@ -1,6 +1,6 @@
 #include<iostream>
 #include<ctime>
-#include"Person.hpp"
+#include"Persons.hpp"
 
 using namespace std;
 
