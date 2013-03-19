@@ -9,6 +9,13 @@ void Person::setName(string temp)
     name=temp;
 }
 
+string Person::getName()
+{
+    return name;
+}
+
+/*
+
 void Person::setPersonality()
 {
     sor choice;
@@ -46,9 +53,9 @@ void Person::setPhobia(sor choice)
             } else if(random == 7){ 
                 mentalill += " Acrophobia";
             } else if(random == 8){ 
-
+                cout<<"lol"<<endl;
             }   
         }   
     }
 }
-
+*/

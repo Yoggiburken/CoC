@@ -6,6 +6,7 @@ using namespace std;
 
 Person newPerson()
 {
+    system("clear");
     Person temp;
     string temp_name;
     cout<<"Choose name: ";
@@ -14,8 +15,20 @@ Person newPerson()
     return temp;
 }
 
-void removePerson(vector<Person>&)
-{}
+int removePerson(vector<Person>&persons)
+{
+    system("clear");
+    int ret;
+    
+    do{
+        for(int i=0; i < persons.size(); i++) {
+            cout<<setw(3)<<left<<i+1<<setw(20)<<right<<persons[i].getName()<<endl;
+        }
+        cin>>ret;
+    }while(!cin.good());
+
+    return ret;
+}
 
 int main()
 {
@@ -36,13 +49,16 @@ int main()
         if(cmd == 1) {
             persons.push_back(newPerson());
         } else if(cmd == 2) {
-            removePerson(persons);
+            persons.erase(persons.begin()+removePerson(persons));
         } else if(cmd == 3) {
             system("clear");
-            for(int i=0; i < 10; i++) {
-                cout<<setw(3)<<left<<i+1<<setw(20)<<endl;
+            for(int i=0; i < persons.size(); i++) {
+                cout<<setw(3)<<left<<i+1<<setw(20)<<right<<persons[i].getName()<<endl;
             }
             cin>>cmd;
+        } else if(cmd == 0) {
+            run = false;
         }
-    }    
+    }
+    system("clear");    
 }

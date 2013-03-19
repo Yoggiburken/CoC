@@ -25,6 +25,7 @@ class Person {
 
 public:
     void setName(string);
+    string getName();
     void setPersonality();
     void setPhobia(sor);
     void moveToLocation();
