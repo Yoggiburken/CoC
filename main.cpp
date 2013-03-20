@@ -52,6 +52,10 @@ int main()
             persons.erase(persons.begin()+removePerson(persons));
         } else if(cmd == 3) {
             system("clear");
+            if(persons.size() < 1) {
+                cout<<"No person to edit."<<endl;
+                sleep(1);
+            }
             for(int i=0; i < persons.size(); i++) {
                 cout<<setw(3)<<left<<i+1<<setw(20)<<right<<persons[i].getName()<<endl;
             }
